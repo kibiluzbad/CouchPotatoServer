@@ -82,9 +82,9 @@ class CouchPotatoApi(MovieProvider):
         url = self.urls['is_movie'] % identifier
         url += '' if adding else '?ignore=1'
 
-        data = self.getJsonData(url, headers = self.getRequestHeaders())
-        if data:
-            return data.get('is_movie', True)
+        # data = self.getJsonData(url, headers = self.getRequestHeaders())
+        # if data:
+        #     return data.get('is_movie', True)
 
         return True
 
